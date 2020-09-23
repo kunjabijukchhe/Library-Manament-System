@@ -19,6 +19,7 @@ ALTER TABLE `admin`
 
  ALTER TABLE `admin`
   ADD unique(`user`);
+alter table admin add email varchar(255);
 
 --
 -- Dumping data for table `admin`
@@ -52,8 +53,7 @@ ALTER TABLE `book`
 -- Dumping data for table `book`
 --
 
-INSERT INTO `book` (`book_id`, `name`, `author`, `availability`) VALUES
-(10, 'Python Programming', 'Sangit', 'YES');
+INSERT INTO `book` (`book_id`, `name`, `author`, `availability`) VALUES(10, 'Python Programming', 'Sangit', 'YES');
 
 -- --------------------------------------------------------
 
@@ -102,6 +102,7 @@ ALTER TABLE `student`
 
 ALTER TABLE `student`
   MODIFY `stud_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+ alter table student add email varchar(255);
 
 --
 -- Dumping data for table `student`
